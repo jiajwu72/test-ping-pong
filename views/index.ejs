@@ -3,9 +3,72 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- <script src="./javascripts/pong.js"> </script> -->
   </head>
+
+  <style>
+    .contaiter{
+      border: 2px blueviolet solid;
+    }
+  </style>
+
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <canvas class="contaiter" id="canvas">
+
+    </canvas>
+    <script src="./javascripts/pong.js"> </script>
   </body>
+  <!-- <script src="./javascripts/pong.js"> </script> -->
+
+  <!-- <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = 800;
+    canvas.height = 800;
+    // ctx.fillRect(50,50,100,100);
+    ctx.beginPath();
+    ctx.moveTo(75,30);
+    ctx.lineTo(400,300);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(75,80,50, 0, 1.5*Math.PI);
+    ctx.fillStyle = "green";
+    ctx.lineWidth = 5;
+    ctx.fill();
+    ctx.stroke();
+  </script> -->
+
+  <!-- <script src="./javascripts/Paddle.js"></script> -->
+  <!-- <script>
+    // import Paddle from "/scripts/Paddle.js"
+    const canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d");
+    // canvas.width = 800;
+    // canvas.height = 800;
+
+    const GAME_WIDTH = 800;
+    const GAME_HEIGHT = 600;
+    ctx.clearRect(0,0,800,600)
+
+    
+    ctx.fillRect(50,50,100,100);
+    ctx.beginPath();
+    ctx.moveTo(75,30);
+    ctx.lineTo(400,300);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(75,80,50, 0, 1.5*Math.PI);
+    ctx.fillStyle = "red";
+    ctx.lineWidth = 5;
+    ctx.fill();
+    ctx.stroke();
+
+    let paddle = new Paddle(GAME_WIDTH, GAME_HEIGHT);
+    paddle.draw(ctx);
+
+  </script> -->
 </html>
